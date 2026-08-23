@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms of Trade — Azad Global Trade</title>
+<meta name="description" content="Terms of trade governing quotations, orders, payments, and shipments from Azad Global Trade." />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Plus Jakarta Sans',sans-serif;background:#060B09;color:#DDD5C8}
+  h1,h2,h3{color:#F0EBE3}
+  a{color:#DAB565}
+  a:hover{color:#E8CC8A}
+</style>
+</head>
+<body class="min-h-screen p-8 lg:p-16">
+  <div class="max-w-3xl mx-auto">
+    <a href="index.html" class="inline-block mb-8 text-sm">&larr; Back to Home</a>
+    <h1 class="text-4xl font-black mb-4">Terms of Trade</h1>
+    <p class="text-warm-500 mb-8 text-sm">Last updated: <span id="date"></span></p>
+
+    <section class="space-y-6 text-sm leading-relaxed">
+      <div>
+        <h2 class="text-xl font-bold mb-2">1. Quotations</h2>
+        <p>All quotations are valid for 30 days from the date of issue unless otherwise stated. Prices are subject to change based on market conditions, currency fluctuations, and shipping costs.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-2">2. Orders & Acceptance</h2>
+        <p>An order becomes binding only upon written confirmation by Azad Global Trade, accompanied by an official Proforma Invoice. Acceptance is subject to product availability and compliance verification.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-2">3. Payment Terms</h2>
+        <p>Standard terms: 30% advance upon order confirmation, 70% balance against shipping documents. Letter of Credit (LC) accepted for orders above USD 25,000. All bank charges are borne by the buyer.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-2">4. Shipping & Delivery</h2>
+        <p>Delivery timelines are estimates and not guaranteed. Risk passes to the buyer once goods are loaded onto the carrier (FOB terms, unless otherwise agreed in writing). Force majeure events release both parties from contractual obligations.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-2">5. Quality & Inspection</h2>
+        <p>Pre-shipment inspection reports are provided. Buyer must inspect goods within 14 days of receipt. Claims for defects must be raised in writing with supporting documentation.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-2">6. Documentation</h2>
+        <p>Standard export documentation includes Certificate of Origin, Phytosanitary Certificate, Lab Test Report, Bill of Lading, Packing List, and Commercial Invoice. Additional documents available on request.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-2">7. Disputes & Jurisdiction</h2>
+        <p>These terms are governed by the laws of India. Any disputes will be subject to the exclusive jurisdiction of courts in Chennai, Tamil Nadu, India.</p>
+      </div>
+    </section>
+
+    <p class="text-xs text-warm-700 mt-12">&copy; <span id="year"></span> Azad Global Trade. All rights reserved.</p>
+  </div>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
